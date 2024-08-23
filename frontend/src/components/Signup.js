@@ -18,7 +18,7 @@ const Signup = () => {
     }
 
     const sendRequest = async () => {
-        const res = await axios.post('https://authentication-backend-5h12.onrender.com/api/signup', {
+        const res = await axios.post('https://localhost:5000/api/signup', {
             name: inputs.name,
             email: inputs.email,
             password: inputs.password
