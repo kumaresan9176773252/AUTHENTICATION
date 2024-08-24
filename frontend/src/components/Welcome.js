@@ -7,7 +7,7 @@ const Welcome = () => {
   const [user, setUser] = useState();
 
   const refreshToken = async () => {
-    const res = await axios.get("https://localhost:5000/api/refresh", {
+    const res = await axios.get("https://authentication-backend-5h12.onrender.com/api/refresh", {
       withCredentials: true
     }).catch(err => console.log(err));
     const data = await res.data;
@@ -16,7 +16,7 @@ const Welcome = () => {
 
 
   const sendRequest = async () => {
-    const res = await axios.get('https://localhost:5000/api/user', {
+    const res = await axios.get('https://authentication-backend-5h12.onrender.com/api/user', {
       withCredentials: true
     }).catch(err => console.log(err));
     const data = await res.data;

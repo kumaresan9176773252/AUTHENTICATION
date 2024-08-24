@@ -21,7 +21,7 @@ const Login = () => {
     }
 
     const sendRequest = async () => {
-        const res = await axios.post('https://localhost:5000/api/login', {
+        const res = await axios.post('https://authentication-backend-5h12.onrender.com/api/login', {
             email: inputs.email,
             password: inputs.password
         })
